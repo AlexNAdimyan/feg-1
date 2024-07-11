@@ -1,0 +1,50 @@
+/* selectors: class, id, tagName, attributeName */
+
+.item {
+  width: 200px;
+  height: 200px;
+  background: #000;
+}
+
+.some {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  background: pink;
+}
+
+.long {
+  width: 500px;
+  height: 200px;
+  background: #ff2255;
+}
+
+#circle {
+  width: 350px;
+  height: 350px;
+  border-radius: 100%;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(10, 208, 186, 1) 0%, rgba(0, 212, 255, 1) 100%);
+}
+
+h1 {
+  font-size: 55px;
+  font-family: Arial;
+}
+
+p {
+  color:rgb(45, 140, 158);
+  font-size: 18px;
+  font-family: Arial;
+  letter-spacing: 1px;
+  text-align: justify;
+  line-height: 32px;
+}
+
+
+selector {
+  property: value;
+  property: value;
+  property: value;
+  property: value;
+}
