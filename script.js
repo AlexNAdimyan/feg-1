@@ -1,21 +1,21 @@
-console.log(23 + 45);
-console.log(104 - 63);
-console.log(16 / 8);
-console.log(0.7 / 8);
-console.log(6 % 4);
-console.log((50 - 60) / 2);
+"use strict";
 
-console.log(5 > 6);
-console.log(4 < 7);
-console.log(7 >= 10);
-console.log(8 <= 8);
-console.log(101 == '101');
-console.log(101 === '101');
-console.log(!true);
-console.log(!false);
-console.log(101 != '101');
-console.log(101 !== '101');
+const countOfFilms = +prompt("Քանի՞ ֆիլմ եք վերջերս դիտել");
 
-console.log(5 > 8 && 6 === 6);
+const DB = {
+  count: countOfFilms,
+  movies: {},
+  actors: {},
+  genrer: [],
+  privat: false
+};
 
-console.log(10 > 2 || 5 == '5');
+const a = prompt("Ո՞ր ֆիլմն եք վերջերս դիտել");
+const b = +prompt("Ինչքա՞ն եք գնահատում այդ ֆիլմը");
+const c = prompt("Ո՞ր ֆիլմն եք վերջերս դիտել");
+const d = +prompt("Ինչքա՞ն եք գնահատում այդ ֆիլմը");
+
+DB.movies[a] = b;
+DB.movies[c] = d;
+
+console.log(DB);
