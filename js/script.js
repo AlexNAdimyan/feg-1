@@ -1,6 +1,6 @@
 "use strict";
 
-const countOfFilms = +prompt("Քանի՞ ֆիլմ եք վերջերս դիտել");
+const countOfFilms = +prompt("How many movies have you watched ever?");
 
 const DB = {
   count: countOfFilms,
@@ -10,12 +10,14 @@ const DB = {
   privat: false
 };
 
-const a = prompt("Ո՞ր ֆիլմն եք վերջերս դիտել");
-const b = +prompt("Ինչքա՞ն եք գնահատում այդ ֆիլմը");
-const c = prompt("Ո՞ր ֆիլմն եք վերջերս դիտել");
-const d = +prompt("Ինչքա՞ն եք գնահատում այդ ֆիլմը");
+const firstFilm = prompt("What movie did you watch recently?");
+const firstFilmGrade = +prompt("How much do you rate that movie?");
+const secondFilm = prompt("What movie did you watch recently?");
+const secondFilmGrade = +prompt("How much do you rate that movie?");
+const thirdFilm = prompt("What movie did you watch recently?");
+const thirdFilmGrade = +prompt("How much do you rate that movie?");
 
-DB.movies[a] = b;
-DB.movies[c] = d;
+DB.movies[firstFilm] = firstFilmGrade;
+DB.movies[secondFilm] = secondFilmGrade;
 
 console.log(DB);
